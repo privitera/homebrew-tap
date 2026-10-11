@@ -2,7 +2,6 @@ class UtcClock < Formula
   desc "Menu bar clock showing UTC with seconds; click to copy an ISO-8601 timestamp"
   homepage "https://github.com/privitera/shareware/tree/main/utc-clock"
   url "https://github.com/privitera/shareware/archive/refs/tags/utc-clock-v1.0.0.tar.gz"
-  version "1.0.0"
   sha256 "d81ee61d08ab1f70ac22d52b430edc89b796c4af5bc2c9479c7bc16b66af9efe"
 
   depends_on macos: :ventura
