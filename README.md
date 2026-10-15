@@ -1,6 +1,6 @@
 # privitera/tap
 
-Homebrew formulae for small things from [privitera/shareware](https://github.com/privitera/shareware).
+Homebrew formulae for small tools by [privitera](https://github.com/privitera).
 
 ```bash
 brew tap privitera/tap
@@ -8,7 +8,7 @@ brew tap privitera/tap
 
 | Formula | Description |
 |---------|-------------|
-| [`utc-clock`](./Formula/utc-clock.rb) | macOS menu bar clock showing UTC with seconds; click to copy an ISO-8601 timestamp |
+| [`utc-clock`](https://github.com/privitera/utc-clock) | macOS menu bar clock showing UTC with seconds; click to copy an ISO-8601 timestamp |
 
 ## utc-clock
 

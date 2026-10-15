@@ -1,18 +1,16 @@
 class UtcClock < Formula
   desc "Menu bar clock showing UTC with seconds; click to copy an ISO-8601 timestamp"
-  homepage "https://github.com/privitera/shareware/tree/main/utc-clock"
-  url "https://github.com/privitera/shareware/archive/refs/tags/utc-clock-v1.0.0.tar.gz"
-  sha256 "d81ee61d08ab1f70ac22d52b430edc89b796c4af5bc2c9479c7bc16b66af9efe"
+  homepage "https://github.com/privitera/utc-clock"
+  url "https://github.com/privitera/utc-clock/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "2899ea4b978721ccec1a054a564998f573804b4698068fc27a0e302fd834140b"
 
   depends_on macos: :ventura
 
   def install
     contents = prefix/"UTCClock.app/Contents"
     (contents/"MacOS").mkpath
-    cd "utc-clock" do
-      contents.install "Info.plist"
-      system "swiftc", "-O", "-o", contents/"MacOS/UTCClock", "main.swift"
-    end
+    contents.install "Info.plist"
+    system "swiftc", "-O", "-o", contents/"MacOS/UTCClock", "main.swift"
     system "codesign", "--force", "--sign", "-", prefix/"UTCClock.app"
   end
 
