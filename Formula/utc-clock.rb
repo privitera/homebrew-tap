@@ -3,6 +3,7 @@ class UtcClock < Formula
   homepage "https://github.com/privitera/utc-clock"
   url "https://github.com/privitera/utc-clock/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "2899ea4b978721ccec1a054a564998f573804b4698068fc27a0e302fd834140b"
+  license "MIT"
 
   depends_on macos: :ventura
 
